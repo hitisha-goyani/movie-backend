@@ -5,6 +5,10 @@ import uploads from "../middleware/fileUpload.js";
 const router = express.Router();
 
 //add movie and image
+router.get("/", (req, res) => {
+  res.render("add");
+});
+
 router.get("/add", (req, res) => {
   res.render("add");
 });
